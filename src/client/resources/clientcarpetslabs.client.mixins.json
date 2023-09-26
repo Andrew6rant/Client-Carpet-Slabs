@@ -3,7 +3,9 @@
   "package": "io.github.andrew6rant.clientcarpetslabs.mixin.client",
   "compatibilityLevel": "JAVA_17",
   "client": [
+    "BlockRenderManagerMixin",
     "CarpetBlockMixin",
+    "ChunkBuilderBuiltChunkRebuildTaskMixinSquared",
     "WorldRendererMixin"
   ],
   "injectors": {

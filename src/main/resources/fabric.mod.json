@@ -26,6 +26,7 @@
 			"environment": "client"
 		}
 	],
+	"accessWidener" : "clientcarpetslabs.accesswidener",
 	"depends": {
 		"fabricloader": ">=0.14.22",
 		"minecraft": "~1.20.1",

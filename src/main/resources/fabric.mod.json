@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "clientcarpetslabs",
+	"version": "${version}",
+	"name": "Client Carpet Slabs",
+	"description": "Render carpet blocks on slabs and stairs, entirely client side!",
+	"authors": [
+		"Andrew6rant (Andrew Grant)"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/clientcarpetslabs/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+          "io.github.andrew6rant.clientcarpetslabs.ClientCarpetSlabs"
+		]
+	},
+	"mixins": [
+		"clientcarpetslabs.mixins.json",
+		{
+			"config": "clientcarpetslabs.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
